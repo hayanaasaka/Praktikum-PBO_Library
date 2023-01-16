@@ -1,12 +1,12 @@
 package entity;
 
 public abstract class LoginEntity {
-   protected String user;
+   protected String id;
    protected String password;
    protected String nama;
 
-    public LoginEntity(String user,String password,String nama) {
-        this.user = user;
+    public LoginEntity(String id,String password,String nama) {
+        this.id = id;
         this.password = password;
         this.nama = nama;
     }
@@ -14,12 +14,12 @@ public abstract class LoginEntity {
     public LoginEntity(){
         
     }
-    public String getUser() {
-        return user;
+    public String getId() {
+        return id;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getPassword() {

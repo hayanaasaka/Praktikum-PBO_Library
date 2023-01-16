@@ -30,6 +30,7 @@ public class BukuModel implements ModelInterfaces {
         DataBuku.remove(index);
     }
     
+    @Override
     public void get_where(int index){
         DataBuku.get(index);
     }

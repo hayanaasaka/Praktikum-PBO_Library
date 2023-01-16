@@ -19,7 +19,6 @@ public class UserEntity{
         return nama;
     }
     
- 
     public void setNama(String nama){
         this.nama = nama;
     }

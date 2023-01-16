@@ -3,8 +3,8 @@ package entity;
 public class AdminEntity extends LoginEntity{
     private int kode;
 
-    public AdminEntity(String user, String password, String nama, int kode) {
-        super(user, password, nama);
+    public AdminEntity(String id, String password, String nama, int kode) {
+        super(id, password, nama);
         this.kode = kode;
     }
 

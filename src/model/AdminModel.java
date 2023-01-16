@@ -35,7 +35,23 @@ public class AdminModel implements ModelInterfaces{
     }
     
     @Override
-    public void get_where(int index){
-        DataAdmin.get(index);
+    public void get_where(int index) {
+       
     }
+    
+    public AdminEntity showDataAdmin(int index){
+        return DataAdmin.get(index);
+    } 
+    
+    public int cekAdmin(String id, String password){
+        int loop=0;
+        for(AdminEntity adminEntity: getDataAdmin()){
+            if(adminEntity.getId().equals(id) && adminEntity.getPassword().equals(password)){
+                break;
+            }else{
+                loop++;
+            }
+        }
+        return loop;
+    };
 }
